@@ -4,9 +4,9 @@ require 'rubygems'
 require 'chatterbot/dsl'
 require_relative 'reply_handler'
 
-include Reply
+include Reply_handler
 #
-# this is the script for the twitter bot HolidayBot1
+# this is the script for the twitter bot BenderBot101
 # generated on 2020-06-24 18:30:05 -0300
 #
 
@@ -34,17 +34,13 @@ exclude "hi", "spammer", "junk"
 #  reply "Hey #USER# nice to meet you!", tweet
 # end
 
+
+
 loop do
 
   replies do |tweet|
-    if insulted(tweet.text)
-      reply(
-      "Hey #USER# you can:
-      https://raw.githack.com/Bismarck-GM/microverse-ruby-bot/base-bot-template/twittermeta.html",
-      tweet)
-    else
-      reply "Yes #USER#, whatever you want", tweet
-    end
+    insulted(tweet)
+
   end
 
   sleep 60
