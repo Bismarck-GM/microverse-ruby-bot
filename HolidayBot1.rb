@@ -17,7 +17,7 @@ secret '0QhzCg6SSdiHwBAlYrNQaEd4bueE7Xt6VuiHsfcgbyImK'
 token '1275896004815044612-nJkqM0nZWEqYSD8ZNtycsZknGPq8Gt'
 
 # remove this to send out tweets
-debug_mode
+# debug_mode
 
 # remove this to update the db
 no_update
@@ -38,9 +38,12 @@ loop do
 
   replies do |tweet|
     if insulted(tweet.text)
-      reply "#USER# I don't get what are you trying to say", tweet
+      reply(
+      "Hey #USER# bite my shiny metallic ass
+      https://i.pinimg.com/originals/bf/46/15/bf46156ead49d624f7df784c6e8a94f7.jpg",
+      tweet)
     else
-      reply "Yes #USER#, you are very kind to say that!", tweet
+      reply "Yes #USER#, whatever you want", tweet
     end
   end
 
