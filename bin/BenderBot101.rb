@@ -2,7 +2,7 @@
 
 require 'rubygems'
 require 'chatterbot/dsl'
-require_relative 'reply_handler'
+require './lib/reply_handler'
 
 include ReplyHandler
 #
