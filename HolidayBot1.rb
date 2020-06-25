@@ -39,7 +39,7 @@ loop do
   replies do |tweet|
     if insulted(tweet.text)
       reply(
-      "Hey #USER# bite my shiny metallic ass
+      "Hey #USER# you can:
       https://raw.githack.com/Bismarck-GM/microverse-ruby-bot/base-bot-template/twittermeta.html",
       tweet)
     else
