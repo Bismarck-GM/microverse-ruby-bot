@@ -17,7 +17,7 @@ secret '0QhzCg6SSdiHwBAlYrNQaEd4bueE7Xt6VuiHsfcgbyImK'
 token '1275896004815044612-nJkqM0nZWEqYSD8ZNtycsZknGPq8Gt'
 
 # remove this to send out tweets
-debug_mode
+# debug_mode
 
 # remove this to update the db
 no_update
@@ -43,8 +43,9 @@ loop do
     if insulted(tweet)
       reply("Hey #USER# you can: #{bite_my_ass}", tweet)
       
-    elsif idiolized(tweet)
-      reply("I know #USER# love me. But I must fly away. #{go_to_heaven}", tweet)
+    elsif idolize(tweet)
+      reply("I know #USER# loves me. But I must fly away. #{go_to_heaven}", tweet)
+      p tweet
     end
   end
 
