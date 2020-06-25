@@ -4,7 +4,7 @@ require 'rubygems'
 require 'chatterbot/dsl'
 require_relative 'reply_handler'
 
-include Reply_handler
+include ReplyHandler
 #
 # this is the script for the twitter bot BenderBot101
 # generated on 2020-06-24 18:30:05 -0300
@@ -17,7 +17,7 @@ secret '0QhzCg6SSdiHwBAlYrNQaEd4bueE7Xt6VuiHsfcgbyImK'
 token '1275896004815044612-nJkqM0nZWEqYSD8ZNtycsZknGPq8Gt'
 
 # remove this to send out tweets
-# debug_mode
+debug_mode
 
 # remove this to update the db
 no_update
@@ -33,17 +33,20 @@ exclude "hi", "spammer", "junk"
 # search "keyword" do |tweet|
 #  reply "Hey #USER# nice to meet you!", tweet
 # end
-
-
+bite_my_ass = 'https://raw.githack.com/Bismarck-GM/microverse-ruby-bot/base-bot-template/responses_links/bitemyass.html'
+trivia_post_counter = 0
 
 loop do
 
   replies do |tweet|
-    insulted(tweet)
-
+    if insulted(tweet)
+      reply("Hey #USER# you can: #{bite_my_ass}", tweet)
+      
+    end
   end
 
   sleep 60
+  trivia_post_counter += 1
 end
 
 
