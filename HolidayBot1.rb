@@ -40,7 +40,7 @@ loop do
     if insulted(tweet.text)
       reply(
       "Hey #USER# bite my shiny metallic ass
-      https://i.pinimg.com/originals/bf/46/15/bf46156ead49d624f7df784c6e8a94f7.jpg",
+      https://raw.githack.com/Bismarck-GM/microverse-ruby-bot/base-bot-template/twittermeta.html",
       tweet)
     else
       reply "Yes #USER#, whatever you want", tweet
