@@ -34,6 +34,7 @@ exclude "hi", "spammer", "junk"
 #  reply "Hey #USER# nice to meet you!", tweet
 # end
 bite_my_ass = 'https://raw.githack.com/Bismarck-GM/microverse-ruby-bot/base-bot-template/responses_links/bitemyass.html'
+go_to_heaven = 'https://raw.githack.com/Bismarck-GM/microverse-ruby-bot/base-bot-template/responses_links/gotoheaven.html'
 trivia_post_counter = 0
 
 loop do
@@ -42,6 +43,8 @@ loop do
     if insulted(tweet)
       reply("Hey #USER# you can: #{bite_my_ass}", tweet)
       
+    elsif idiolized(tweet)
+      reply("I know #USER# love me. But I must fly away. #{go_to_heaven}", tweet)
     end
   end
 

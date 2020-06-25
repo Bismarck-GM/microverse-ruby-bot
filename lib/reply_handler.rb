@@ -7,5 +7,10 @@ module ReplyHandler
     end
     false
   end
-
+  def idiolized(tweet)
+    @go_to_heaven.each do |i|
+      return true if /\b#{i}\b/i.match?(tweet.text)
+    end
+    false
+  end
 end
