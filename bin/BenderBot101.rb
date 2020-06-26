@@ -53,7 +53,13 @@ loop do
   trivia_post_counter += 1
 end
 
-
+# Add: hypnotoad, green head sucking thingy, revolution, shut up and take my money, not sure, fry, devil, beer, question function
+# helper function with blank test 'help' 'what'
+# Like the good ones. Try to sort the 'fav' function within chatterbot or twitter gem
+# See if there's a way to be called and read the main twitt you were called upon and tag that user
+# Create an array of diferent post and grab one randomly every 12hs. Maybe try shuffle the array or just fetch 1st item, take it out and
+# put it on the back of the array again.
+# Make tests for all the functions
 
 # bot = Chatterbot::Bot.new
 # bot.debug_mode
