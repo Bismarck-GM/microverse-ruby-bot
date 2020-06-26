@@ -46,3 +46,5 @@
   "twatty", "twunt", "twunter", "v14gra", "v1gra", "vagina", "viagra", "vulva", "w00se", "wang", "wank",
   "wanker", "wanky", "whoar", "whore", "willies", "willy", "xrated", "xxx"]
 @go_to_heaven = ["heaven", "go to heaven", "you angel", "you're an angel", "saint"]
+@hypnotoad = ["hypnotoad", "hypnosis", "brainwash", "hypno", "hypnotizability", "hypnotherapists", "hypnotizations", "hypnotisations"]
+@empty_help = ["help", "what can you do", "assistance"]
