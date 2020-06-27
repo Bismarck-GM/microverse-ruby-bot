@@ -14,14 +14,14 @@ include TriviaPicker
 # generated on 2020-06-24 18:30:05 -0300
 #
 
-consumer_key 'ilnnXut2TjaRP9fKQWZV9lvKt'
-consumer_secret '4plFn9HZG4kqlfxdeApTEvRwblLnxbJAoPGR4LgA5iAYmBlP7R'
+consumer_key 'jAw6wd16umXQkf0vlshf7nEEL'
+consumer_secret 'Hdhg62x7yv4ks3zNmamA0jjPSAf62tIBDiYbsPsDMPZvUH1Jei'
 
-secret '0QhzCg6SSdiHwBAlYrNQaEd4bueE7Xt6VuiHsfcgbyImK'
-token '1275896004815044612-nJkqM0nZWEqYSD8ZNtycsZknGPq8Gt'
+secret 'qkq0Oh3jX0NTp7wMAJbFRHo18PojPjDiv4rwZ11lIIaZr'
+token '1275896004815044612-JQ2nU7h1khNi6oKqZAa72B0MXseZ3m'
 
 # remove this to send out tweets
-debug_mode
+# debug_mode
 
 # remove this to update the db
 no_update
@@ -39,43 +39,43 @@ trivia_post_counter = 0
 
 loop do
 
-  # replies do |tweet|
-  #   p tweet.text
+  replies do |tweet|
+    p tweet.text
 
-  #   if empty_help(tweet)
-  #     reply("Hey #USER# here's a list of what beautiful witty Bender can do
-  #       \n - Drink/Beer \n - Go to heaven \n - Go to Hell \n - Hypnotoad \n - Ask me something  #{help}", tweet)
-  #     favorite(tweet)
+    if empty_help(tweet)
+      reply("Hey #USER# here's a list of what beautiful witty Bender can do
+        \n - Drink/Beer \n - Go to heaven \n - Go to Hell \n - Hypnotoad \n - Ask me something  #{@help}", tweet)
+      favorite(tweet)
 
-  #   elsif question(tweet)
-  #     reply("Hey #USER# ain't nobody got time for your questions. \n If you need help just say it. #{question}", tweet)
-  #     favorite(tweet)
+    elsif question(tweet)
+      reply("Hey #USER# ain't nobody got time for your questions. \n If you need help just say it. #{question}", tweet)
+      favorite(tweet)
 
-  #   elsif tohell(tweet)
-  #     reply("Why you do this to me #USER# ??? #{go_to_hell}", tweet)
-  #     favorite(tweet)
+    elsif tohell(tweet)
+      reply("Why you do this to me #USER# ??? #{go_to_hell}", tweet)
+      favorite(tweet)
 
-  #   elsif idolize(tweet)
-  #     reply("I know #USER# loves me. But I must fly away. #{go_to_heaven}", tweet)
-  #     favorite(tweet)
+    elsif idolize(tweet)
+      reply("I know #USER# loves me. But I must fly away. #{go_to_heaven}", tweet)
+      favorite(tweet)
 
-  #   elsif hypnotoad(tweet)
-  #     reply("That reminded me of my Master: #{hypnotoad}", tweet)
-  #     favorite(tweet)
+    elsif hypnotoad(tweet)
+      reply("That reminded me of my Master: #{hypnotoad}", tweet)
+      favorite(tweet)
 
-  #   elsif insulted(tweet)
-  #     reply("Hey #USER# you can: #{bite_my_ass}", tweet)
-  #     favorite(tweet)
-  #   else
-  #     reply("Yeah well. \n I'm going to build my own theme park... with Jackpot and Hookers \n IN FACT \n Forget the park. #{no_match}" , tweet)
-  #   end
-  # end
-  if trivia_post_counter == 0
+    elsif insulted(tweet)
+      reply("Hey #USER# you can: #{bite_my_ass}", tweet)
+      favorite(tweet)
+    else
+      reply("Yeah well. \n I'm going to build my own theme park... with Jackpot and Hookers \n IN FACT \n Forget the park. #{no_match}" , tweet)
+    end
+  end
+  if trivia_post_counter == 4320
     trivia_quote_sorter()
     tweet("#{@quoteN} Did you know?: #{@quote} #{trivia_link}")
     trivia_post_counter = 0
   end
-  sleep 60
+  sleep 10
   trivia_post_counter += 1
 end
 

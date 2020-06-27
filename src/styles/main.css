@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Futurama";
+  font-display: swap;
+  src:
+    local("Futurama Bold Font"),
+    url(../fonts/fr-bold.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+html { 
+  background: url(../img/background2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,6 +30,10 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: chocolate;
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75); 
+  box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);  
 }
 
 header img {
@@ -27,5 +49,73 @@ header nav {
 header nav ul {
   display: flex;
   width: 100%;
-  justify-content: space-between
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul li {
+  flex-basis: 25%;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: black solid 1px;
+}
+
+header nav ul li a {
+  color: black;
+
+}
+
+body img {
+  max-width: 570px;
+}
+
+body h1 {
+  font-family: "Futurama", 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.title {
+  position: relative;
+  top: 100px;
+  color: white;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 0;
+  z-index: 1;
+}
+
+.img-container {
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75); 
+  box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.left-hand {
+  position: absolute;
+  top: 70%;
+  left: 23%;
+  height: 200px;
+}
+
+.right-hand {
+  position: absolute;
+  top: 12%;
+  left: 68%;
+  height: 200px;
+}
+
+.hypnotoad-filler {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  margin-top: -10px;
 }
