@@ -119,3 +119,7 @@ body h1 {
   background-color: black;
   margin-top: -10px;
 }
+
+.hide-onclick:active {
+  visibility: hidden;
+}
