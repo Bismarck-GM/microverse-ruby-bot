@@ -26,11 +26,16 @@ body {
 }
 
 header {
+  padding-top: 30px;
+  padding-left: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: chocolate;
+  color: white;
   -webkit-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75); 
   box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);  
@@ -47,7 +52,6 @@ header nav {
 }
 
 header nav ul {
-  display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -63,8 +67,8 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: black;
-
+  color: white;
+  text-decoration: none;
 }
 
 body img {
@@ -113,13 +117,38 @@ body h1 {
   height: 200px;
 }
 
-.hypnotoad-filler {
-  height: 60px;
-  width: 100%;
-  background-color: black;
-  margin-top: -10px;
-}
-
 .hide-onclick:active {
   visibility: hidden;
+}
+
+.card-image {
+  width: 570px;
+  height: 746px;
+}
+
+.git-links {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.git-links p {
+  padding-right: 15px;
+  font-size: 12px;
+}
+
+.git-links img {
+  height: 30px;
+}
+
+.firm {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
 }

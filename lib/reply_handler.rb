@@ -24,6 +24,12 @@ module ReplyHandler
     end
     false
   end
+  def tohell(tweet)
+    @go_to_hell.each do |i|
+      return true if /\b#{i}\b/i.match?(tweet.text)
+    end
+    false
+  end
   def hypnotoad(tweet)
     @hypnotoad.each do |i|
       return true if /\b#{i}\b/i.match?(tweet.text)
