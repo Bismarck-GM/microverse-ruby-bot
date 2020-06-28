@@ -6,9 +6,6 @@ require './lib/reply_handler'
 require './lib/tweets_handler'
 require './lib/card_links'
 
-include ReplyHandler
-include TriviaPicker
-
 #
 # this is the script for the twitter bot BenderBot101
 # generated on 2020-06-24 18:30:05 -0300
@@ -21,34 +18,25 @@ secret 'qkq0Oh3jX0NTp7wMAJbFRHo18PojPjDiv4rwZ11lIIaZr'
 token '1275896004815044612-JQ2nU7h1khNi6oKqZAa72B0MXseZ3m'
 
 # remove this to send out tweets
-# debug_mode
+debug_mode
 
 # remove this to update the db
 no_update
 # remove this to get less output when running
 verbose
 
-# here's a list of users to ignore
-blacklist "abc", "def"
-
-# here's a list of things to exclude from searches
-exclude "hi", "spammer", "junk"
-
-
 trivia_post_counter = 0
 
 loop do
-
   replies do |tweet|
     p tweet.text
-
     if empty_help(tweet)
       reply("Hey #USER# here's a list of what beautiful witty Bender can do
-        \n - Drink/Beer \n - Go to heaven \n - Go to Hell \n - Hypnotoad \n - Ask me something  #{@help}", tweet)
+        \n - Drink/Beer \n - Go to heaven \n - Go to Hell \n - Hypnotoad \n - Ask me something #{@help}", tweet)
       favorite(tweet)
 
     elsif question(tweet)
-      reply("Hey #USER# ain't nobody got time for your questions. \n If you need help just say it. #{@question}", tweet)
+      reply("Hey #USER# ain't nobody got time for your questions.\nIf you need help just say it. #{@question}", tweet)
       favorite(tweet)
 
     elsif tohell(tweet)
@@ -67,12 +55,15 @@ loop do
       reply("Hey #USER# you can: #{@bite_my_ass}", tweet)
       favorite(tweet)
     else
-      reply("Yeah well. \n I'm going to build my own theme park... with Jackpot and Hookers \n IN FACT \n Forget the park. #{@no_match}" , tweet)
+      reply(
+        "Yeah well. \n I'm going to build my own theme park...
+        with Jackpot and Hookers \n IN FACT \n Forget the park. #{@no_match}", tweet
+      )
     end
   end
   if trivia_post_counter == 4320
-    trivia_quote_sorter()
-    tweet("#{@quoteN} Did you know?: #{@quote} #{@trivia_link}")
+    trivia_quote_sorter
+    tweet("#{@quote_num} Did you know?: #{@quote} #{@trivia_link}")
     trivia_post_counter = 0
   end
   sleep 10
