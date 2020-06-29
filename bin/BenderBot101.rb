@@ -33,23 +33,18 @@ loop do
       reply("Hey #USER# here's a list of what beautiful witty Bender can do
         \n - Drink/Beer \n - Go to heaven \n - Go to Hell \n - Hypnotoad \n - Ask me something #{@help}", tweet)
       favorite(tweet)
-
     elsif question(tweet)
       reply("Hey #USER# ain't nobody got time for your questions.\nIf you need help just say it. #{@question}", tweet)
       favorite(tweet)
-
     elsif tohell(tweet)
       reply("Why you do this to me #USER# ??? #{@go_to_hell}", tweet)
       favorite(tweet)
-
     elsif idolize(tweet)
       reply("I know #USER# loves me. But I must fly away. #{@go_to_heaven}", tweet)
       favorite(tweet)
-
     elsif hypnotoad(tweet)
       reply("Hey #USER# that reminded me of my Master: #{@hypnotoad}", tweet)
       favorite(tweet)
-
     elsif insulted(tweet)
       reply("Hey #USER# you can: #{@bite_my_ass}", tweet)
       favorite(tweet)
