@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Futurama";
+  font-display: swap;
+  src:
+    local("Futurama Bold Font"),
+    url(../fonts/fr-bold.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+html { 
+  background: url(../img/background2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 60%;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 30px;
+  padding-left: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75); 
+  box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);  
+}
+
+header img {
+  width: 250px;
+
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+}
+
+header nav ul {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul li {
+  flex-basis: 25%;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: black solid 1px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+body img {
+  max-width: 570px;
+}
+
+body h1 {
+  font-family: "Futurama", 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.title {
+  color: white;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  margin-top: 200px;
+  top: 50px;
+}
+
+.img-container {
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75); 
+  box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  height: 746px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.left-hand {
+  position: absolute;
+  top: 86%;
+  left: -20px;
+  height: 200px;
+}
+
+.right-hand {
+  position: absolute;
+  top: 25%;
+  right: -45px;
+  height: 200px;
+}
+
+.hide-onclick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide-onclick:active {
+  visibility: hidden;
+}
+
+.card-image {
+  width: 570px;
+  height: 746px;
+}
+
+.git-links {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.git-links p {
+  padding-right: 15px;
+  font-size: 12px;
+}
+
+.git-links img {
+  height: 30px;
+}
+
+.firm {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
