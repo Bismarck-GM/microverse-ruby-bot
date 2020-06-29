@@ -1,7 +1,6 @@
 require_relative 'text_matching.rb'
 
 module ReplyHandler
-
   def empty_help(tweet)
     raise ScriptError.new, 'Only Tweet-Object in #empty_help' if tweet.is_a?(Array)
 

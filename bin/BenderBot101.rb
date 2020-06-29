@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 require 'rubygems'
 require 'chatterbot/dsl'
 require './lib/reply_handler'
@@ -53,11 +51,11 @@ loop do
     else
       reply(
         "Yeah well. \n I'm going to build my own theme park...
-        with Jackpot and Hookers \n IN FACT \n Forget the park. #{@no_match}", tweet)
+        with Jackpot and Hookers \n IN FACT \n Forget the park. #{@no_match}", tweet
+      )
     end
   end
   if trivia_post_counter == 720
-    trivia_quote_sorter
     tweet("#{@quote_num} Did you know?: #{@quote} #{@trivia_link}")
     trivia_post_counter = 0
   end
