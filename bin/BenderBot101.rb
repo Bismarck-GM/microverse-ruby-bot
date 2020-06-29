@@ -53,8 +53,7 @@ loop do
     else
       reply(
         "Yeah well. \n I'm going to build my own theme park...
-        with Jackpot and Hookers \n IN FACT \n Forget the park. #{@no_match}", tweet
-      )
+        with Jackpot and Hookers \n IN FACT \n Forget the park. #{@no_match}", tweet)
     end
   end
   if trivia_post_counter == 720
