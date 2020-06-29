@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 @trivia_hash = { '#1' => 'It is owned by The Curiosity Company and Twentieth Century Fox.',
                  '#2' => 'The show began in 1999. During the course of the series',
                  '#3' => 'It is classed as an animated science-fiction comedy.',

@@ -1,9 +1,5 @@
-# frozen_string_literal: true
-
 require 'spec_helper'
 require '../lib/reply_handler.rb'
-
-include ReplyHandler
 
 class Tweet
   attr_reader :text, :id
