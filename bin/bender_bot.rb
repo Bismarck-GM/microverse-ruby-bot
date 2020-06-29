@@ -1,8 +1,8 @@
 require 'rubygems'
 require 'chatterbot/dsl'
-require './lib/reply_handler'
-require './lib/tweets_handler'
-require './lib/card_links'
+require_relative '../lib/reply_handler.rb'
+require_relative '../lib/tweets_handler.rb'
+require_relative '../lib/card_links.rb'
 
 #
 # this is the script for the twitter bot BenderBot101
@@ -27,24 +27,24 @@ trivia_post_counter = 0
 
 loop do
   replies do |tweet|
-    if empty_help(tweet)
+    if empty_help?(tweet)
       reply("Hey #USER# here's a list of what beautiful witty Bender can do
         \n - Drink/Beer \n - Go to heaven \n - Go to Hell \n - Hypnotoad \n - Ask me something #{@help}", tweet)
       favorite(tweet)
 
-    elsif question(tweet)
+    elsif question?(tweet)
       reply("Hey #USER# ain't nobody got time for your questions.\nIf you need help just say it. #{@question}", tweet)
       favorite(tweet)
 
-    elsif tohell(tweet)
+    elsif tohell?(tweet)
       reply("Why you do this to me #USER# ??? #{@go_to_hell}", tweet)
       favorite(tweet)
 
-    elsif idolize(tweet)
+    elsif idolize?(tweet)
       reply("I know #USER# loves me. But I must fly away. #{@go_to_heaven}", tweet)
       favorite(tweet)
 
-    elsif hypnotoad(tweet)
+    elsif hypnotoad?(tweet)
       reply("Hey #USER# that reminded me of my Master: #{@hypnotoad}", tweet)
       favorite(tweet)
 

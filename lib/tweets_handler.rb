@@ -1,4 +1,4 @@
-require_relative 'trivia_info'
+require_relative 'trivia_info.rb'
 
 module TriviaPicker
   def trivia_quote_sorter(hash = @trivia_hash)

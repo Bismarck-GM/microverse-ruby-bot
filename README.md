@@ -67,7 +67,7 @@ Do the same thing in bender_bot.yml
 
 You can modify the amount of trivias. They're stored at ```lib/trivia_info.rb``` as a hash.
 
-You also can modify wich words will triger a response at ```lib/text_matching.rb```
+You also can modify which words will trigger a response at ```lib/text_matching.rb```
 
 ### Run tests
 
