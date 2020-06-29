@@ -25,9 +25,13 @@ The bot checks for and replies/fav every 60 seconds.
 
 ## Examples of it working. Replying and posting.
 
+When user writes 'help' or don't say anything:
 ![screenshot](/src/img/Screenshot10.png)
+When user says 'heaven' 'angel' and something like that:
 ![screenshot](/src/img/Screenshot11.png)
+When user insults:
 ![screenshot](/src/img/Screenshot12.png)
+Bot posting facts about Futurama every 12hs:
 ![screenshot](/src/img/Screenshot13.png)
 
 ## Getting Started
