@@ -10,6 +10,7 @@ class Tweet
 end
 
 describe '#empty_help' do
+  include ReplyHandler
   let(:tweet) { Tweet.new('help', 0o0000000001) }
   let(:tweet2) { Tweet.new('hello dude', 0o0000000001) }
   let(:arr) { [1, 2, 3] }
@@ -27,6 +28,7 @@ describe '#empty_help' do
 end
 
 describe '#question' do
+  include ReplyHandler
   let(:tweet) { Tweet.new('Are you sure about it?', 0o0000000001) }
   let(:tweet2) { Tweet.new('hello dude', 0o0000000001) }
   let(:arr) { [1, 2, 3] }
@@ -44,6 +46,7 @@ describe '#question' do
 end
 
 describe '#idolize' do
+  include ReplyHandler
   let(:tweet) { Tweet.new('heaven', 0o0000000001) }
   let(:tweet2) { Tweet.new('hello dude', 0o0000000001) }
   let(:arr) { [1, 2, 3] }
@@ -61,6 +64,7 @@ describe '#idolize' do
 end
 
 describe '#tohell' do
+  include ReplyHandler
   let(:tweet) { Tweet.new('hell', 0o0000000001) }
   let(:tweet2) { Tweet.new('hello dude', 0o0000000001) }
   let(:arr) { [1, 2, 3] }
@@ -78,6 +82,7 @@ describe '#tohell' do
 end
 
 describe '#hypnotoad' do
+  include ReplyHandler
   let(:tweet) { Tweet.new('hypnosis', 0o0000000001) }
   let(:tweet2) { Tweet.new('hello dude', 0o0000000001) }
   let(:arr) { [1, 2, 3] }
