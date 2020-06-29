@@ -1,6 +1,7 @@
 require_relative 'text_matching.rb'
 
 module ReplyHandler
+
   def empty_help(tweet)
     raise ScriptError.new, 'Only Tweet-Object in #empty_help' if tweet.is_a?(Array)
 
@@ -21,8 +22,8 @@ module ReplyHandler
   def insulted(tweet)
     raise ScriptError.new, 'Only Tweet-Object in #insulted' if tweet.is_a?(Array)
 
-    @bad_words.each do |i|
-      return true if /\b#{i}\b/i.match?(tweet.text)
+    tweet.text.split(/ /).each do |i|
+      return true if /\b#{i}\b/i.match?(@bad_words)
     end
     false
   end

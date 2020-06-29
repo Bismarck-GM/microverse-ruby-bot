@@ -41,7 +41,7 @@ describe '#question' do
   end
   
   it 'Should raise ScriptError if argument is not a Tweet Object' do
-    expect { empty_help(arr) }.to raise_error(ScriptError)
+    expect { question(arr) }.to raise_error(ScriptError)
   end
 end
 
@@ -58,7 +58,7 @@ describe '#idolize' do
   end
   
   it 'Should raise ScriptError if argument is not a Tweet Object' do
-    expect { empty_help(arr) }.to raise_error(ScriptError)
+    expect { idolize(arr) }.to raise_error(ScriptError)
   end
 end
 
@@ -75,7 +75,7 @@ describe '#tohell' do
   end
 
   it 'Should raise ScriptError if argument is not a Tweet Object' do
-    expect { empty_help(arr) }.to raise_error(ScriptError)
+    expect { tohell(arr) }.to raise_error(ScriptError)
   end
 end
 
@@ -92,6 +92,6 @@ describe '#hypnotoad' do
   end
 
   it 'Should raise ScriptError if argument is not a Tweet Object' do
-    expect { empty_help(arr) }.to raise_error(ScriptError)
+    expect { hypnotoad(arr) }.to raise_error(ScriptError)
   end
 end

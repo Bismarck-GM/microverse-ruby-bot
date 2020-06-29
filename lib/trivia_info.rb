@@ -9,11 +9,11 @@
                  'Futurama entered the Guinness World Records with “Current Most Critically Acclaimed Animated Series”',
                  '#7' =>
                  'The show is centerd around a cryogenically frozen pizza delivery boy and his gang of motley friends.',
-                 '#8' => 'Futurama is set in New York City in the 31st Century',
+                 '#8' => 'Futurama is set in New York City in the 31st Century.',
                  '#9' => 'Phillip J. Fry (also known as Fry) was frozen when he delivered pizza for Panucci’s Pizza.',
                  '#10' => 'Fry possess no Delta Brain Waves',
                  '#11' => 'Turanga Leela (also known as Leela) is a cycloptic mutant.',
-                 '#12' => 'Her name is derived from the fourth Doctor’s companion',
+                 '#12' => 'Turanga Leela name is derived from the fourth Doctor’s companion',
                  '#13' => 'Bender Bending RodrÃ­guez was a failed Bending Unit 22',
                  '#14' => 'Bender suffers from kleptomania.',
                  '#15' => 'John A. Zoidberg is a Decapodian alien who practises medicine.',
