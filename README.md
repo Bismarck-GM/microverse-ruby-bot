@@ -2,7 +2,7 @@
 
 > A simple bot for twitter created in Ruby.
 
-![screenshot](src\img\BenderBotPage.png)
+![screenshot](/src\img\BenderBotPage.png)
 
 Additional description about the project and its features.
 
@@ -19,10 +19,10 @@ Additional description about the project and its features.
 
 ## Examples of it working. Replying and posting.
 
-![screenshot](src\img\Screenshot10.png)
-![screenshot](src\img\Screenshot11.png)
-![screenshot](src\img\Screenshot12.png)
-![screenshot](src\img\Screenshot13.png)
+![screenshot](/src\img\Screenshot10.png)
+![screenshot](/src\img\Screenshot11.png)
+![screenshot](/src\img\Screenshot12.png)
+![screenshot](/src\img\Screenshot13.png)
 
 ## Getting Started
 
@@ -48,13 +48,13 @@ Do the same thing in bender_bot.yml
 
 ### Modifications
 
-You can modify the amount of trivias. They're stored at lib/trivia_info.rb as a hash.
+You can modify the amount of trivias. They're stored at ```lib/trivia_info.rb``` as a hash.
 
-You also can modify wich words will triger a response at lib/text_matching.rb
+You also can modify wich words will triger a response at ```lib/text_matching.rb```
 
 ### Run tests
 
-To run test just run rspec inside of this folders.
+To run test just run ```rspec``` inside of the folder.
 
 
 ## Authors
