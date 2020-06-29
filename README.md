@@ -2,7 +2,7 @@
 
 > A simple bot for twitter created in Ruby.
 
-![screenshot](/src\img\BenderBotPage.png)
+![screenshot](/src/img/BenderBotPage.png)
 
 Additional description about the project and its features.
 
@@ -19,10 +19,10 @@ Additional description about the project and its features.
 
 ## Examples of it working. Replying and posting.
 
-![screenshot](/src\img\Screenshot10.png)
-![screenshot](/src\img\Screenshot11.png)
-![screenshot](/src\img\Screenshot12.png)
-![screenshot](/src\img\Screenshot13.png)
+![screenshot](/src/img/Screenshot10.png)
+![screenshot](/src/img/Screenshot11.png)
+![screenshot](/src/img/Screenshot12.png)
+![screenshot](/src/img/Screenshot13.png)
 
 ## Getting Started
 
