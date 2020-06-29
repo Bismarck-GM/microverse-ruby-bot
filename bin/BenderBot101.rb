@@ -29,7 +29,6 @@ trivia_post_counter = 0
 
 loop do
   replies do |tweet|
-    p tweet.text
     if empty_help(tweet)
       reply("Hey #USER# here's a list of what beautiful witty Bender can do
         \n - Drink/Beer \n - Go to heaven \n - Go to Hell \n - Hypnotoad \n - Ask me something #{@help}", tweet)
@@ -61,11 +60,11 @@ loop do
       )
     end
   end
-  if trivia_post_counter == 4320
+  if trivia_post_counter == 720
     trivia_quote_sorter
     tweet("#{@quote_num} Did you know?: #{@quote} #{@trivia_link}")
     trivia_post_counter = 0
   end
-  sleep 10
+  sleep 60
   trivia_post_counter += 1
 end

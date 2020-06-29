@@ -81,15 +81,15 @@ body h1 {
 }
 
 .title {
-  position: relative;
-  top: 100px;
   color: white;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 35px 0;
   z-index: 1;
+  position: relative;
+  margin-top: 200px;
+  top: 50px;
 }
 
 .img-container {
@@ -97,7 +97,9 @@ body h1 {
   -moz-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75); 
   box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  width: 570px;
+  height: 746px;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -105,16 +107,22 @@ body h1 {
 
 .left-hand {
   position: absolute;
-  top: 70%;
-  left: 23%;
+  top: 86%;
+  left: -20px;
   height: 200px;
 }
 
 .right-hand {
   position: absolute;
-  top: 12%;
-  left: 68%;
+  top: 25%;
+  right: -45px;
   height: 200px;
+}
+
+.hide-onclick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hide-onclick:active {
