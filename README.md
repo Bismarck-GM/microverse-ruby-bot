@@ -1,57 +1,70 @@
-# Project Name
+# Twitter Bot 
 
-> One paragraph statement about the project.
+> A simple bot for twitter created in Ruby.
 
-![screenshot](./app_screenshot.png)
+![screenshot](src\img\BenderBotPage.png)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- Ruby,
+- chatterbot (GEM),
+- HTML,
+- CSS
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://twitter.com/BenderBot101)
 
+## Examples of it working. Replying and posting.
+
+![screenshot](src\img\Screenshot10.png)
+![screenshot](src\img\Screenshot11.png)
+![screenshot](src\img\Screenshot12.png)
+![screenshot](src\img\Screenshot13.png)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+**Install gem Chatterbot**
 
-### Setup
+Go to your command line and put:
+```gem install chatterbot -v 1.0.1 ```
 
-### Install
+**Download this repository**
+In your command line and in the folder you want to install Bender-Bot do:
+```git clone https://github.com/Bismarck-GM/microverse-ruby-bot.git ```
 
-### Usage
+**For it to run you'll have to get your Token, Secret Toke, Consumer Key and Consumer_Secret to connect with Twitter API**
+After you get those open bender_bot.rb and paste that information in the field with those names.
+
+Do the same thing in bender_bot.yml
+
+**After all of that is done. Simply run bender_bot.rb**
+```ruby bender_bot.rb```
+
+
+### Modifications
+
+You can modify the amount of trivias. They're stored at lib/trivia_info.rb as a hash.
+
+You also can modify wich words will triger a response at lib/text_matching.rb
 
 ### Run tests
 
-### Deployment
-
+To run test just run rspec inside of this folders.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Gerónimo Morisot**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Bismarck-GM](https://github.com/Bismarck-GM)
+- Twitter: [@Rewritablee](https://twitter.com/Rewritablee)
+- Linkedin: [geronimomorisot](https://linkedin.com/in/geronimomorisot)
 
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
 
