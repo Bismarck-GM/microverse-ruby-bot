@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'chatterbot/dsl'
+require 'dotenv'
 require_relative '../lib/reply_handler.rb'
 require_relative '../lib/tweets_handler.rb'
 require_relative '../lib/card_links.rb'
@@ -8,12 +9,12 @@ require_relative '../lib/card_links.rb'
 # this is the script for the twitter bot BenderBot101
 # generated on 2020-06-24 18:30:05 -0300
 #
+Dotenv.load('keys.env')
 
-consumer_key 'jAw6wd16umXQkf0vlshf7nEEL'
-consumer_secret 'Hdhg62x7yv4ks3zNmamA0jjPSAf62tIBDiYbsPsDMPZvUH1Jei'
-
-secret 'qkq0Oh3jX0NTp7wMAJbFRHo18PojPjDiv4rwZ11lIIaZr'
-token '1275896004815044612-JQ2nU7h1khNi6oKqZAa72B0MXseZ3m'
+consumer_key ENV['KEY1']
+consumer_secret ENV['KEY2']
+secret ENV['KEY3']
+token ENV['KEY4']
 
 # remove this to send out tweets
 debug_mode
