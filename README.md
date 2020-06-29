@@ -4,7 +4,13 @@
 
 ![screenshot](/src/img/BenderBotPage.png)
 
-Additional description about the project and its features.
+A witty bot for twitter that will answer and fav all your replies with a phrase and a Card (Twitter metadata link)
+for you to click and land in a page with more information.
+
+It will also post a random facts (within 29 in total) about the show every 12 hours. The facts do not repeat until they're all done and it
+starts over again.
+
+The bot checks for and replies/fav every 60 seconds.
 
 ## Built With
 
